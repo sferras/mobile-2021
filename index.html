@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images\formula.png">
+	<link rel="stylesheet" type = "text/css" href="css/html5reset.css">
+	<link rel="stylesheet" type = "text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Exo:wght@400&display=swap">
+	<title>Formula 1</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class="current"><a href = "index.html">Calendar</a></li>
+				<li><a href = "grid.html">The Grid</a></li>
+				<li><a href = "clasification.html">Clasification</a></li>
+				<li><a href = "2022.html">Future</a></li>
+			</ul>
+		</nav>
+		<h1>Welcome to the F1 (un)Official page</h1>
+	</header>
+
+
+
+	<main>
+
+		<p>Here we have the countdown to the next race: </p>
+		<!--THE FOLLOWING CODE CORRESPONDS TO THE COUNTDOWN AND
+		WAS RETRIEVED FROM https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown-->
+		<p id="demo"></p>
+		<script>
+		var countDownDate = new Date("Nov 7, 2021 14:00:00").getTime();
+		var x = setInterval(function() {
+		var now = new Date().getTime();
+		var distance = countDownDate - now;
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		+ minutes + "m " + seconds + "s ";
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "DONE";}
+		}, 1000);
+		</script>
+		<!--THE CODE ABOVE WAS RETRIEVED FROM W3SCHOOLS (YOU CAN SEE THE LINK) AND CORRESPONDS TO THE COUNTDOWN-->
+
+		<p>The México GP is just around the corner!</p>
+	</main>
+
+	<footer>
+		<p>Sergio Ferreras &copy; 2021</p>
+	</footer>
+</body>
+</html>

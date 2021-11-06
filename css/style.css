@@ -1,0 +1,133 @@
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	font-family: 'Exo', sans-serif;
+	background-color: white;
+}
+
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+	color: rgb(99, 191, 252);
+}
+
+/*Style the images*/
+/*----------
+div{
+	width: 90%;
+	margin: 0 auto;
+	display:grid;
+	gap:10px;
+	grid-template-columns: 1fr;
+	border: 5px solid rgba(138, 208, 255, 0.623);
+}
+
+img{
+	width:100%;
+	filter:grayscale(85%);
+	position:relative;
+	
+
+    transition-property: filter, border-radius, border; 
+  	transition-duration: 1s;
+  	transition-timing-function: linear;
+
+ 	animation-name: slidein;
+  	animation-duration: 4s; 
+
+}
+-----*/
+img{
+    height: auto;
+    width: 100%;
+	position:relative;
+	filter: grayscale(100%);
+	opacity: 60%;
+}
+
+.img2022{
+	filter: grayscale(100%);
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+	color: rgb(99, 191, 252);
+}
+
+/*Add borders around the main components and some
+space too*/
+header, nav, main, h1, footer{
+	margin: 10px 0;
+}
+nav li{
+	background-color:rgba(138, 208, 255, 0.323);
+	padding:10px;
+	width:100%;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+nav li:hover {
+	font-style: italic;
+	text-transform: uppercase;
+	background-color: rgba(255, 0, 136, 0.61);
+}
+
+a {
+	text-decoration: none;
+	color: rgb(99, 191, 252);
+}
+
+nav .current{
+	text-transform: uppercase;
+	background-color: rgba(138, 208, 255, 0.623);
+}
+
+.container{
+	display: grid;
+	border: 3px solid rgba(138, 208, 255, 0.623);
+	grid-template-columns: repeat(auto-fit);
+}
+
+.container > div{
+	width: fit-content;
+    overflow: hidden;
+} 
+.colhead{
+	font-size: 25px;
+	background-color: rgb(99, 191, 252);
+	padding: 10px;
+	color: white;
+}
+table,td,th{
+	border: 2px solid rgb(99, 191, 252);
+	margin-left: auto;
+	margin-right: auto;
+}
+caption{
+	color: rgb(99, 191, 252);
+	font-weight: 900;
+}
+tr:nth-child(odd) {
+	background-color: rgba(138, 208, 255, 0.623);
+	color: white;
+  }
+  tr:nth-child(even) {
+	background-color: transparent;
+	color:rgb(99, 191, 252)
+  }
+  
+  tr:hover {background-color: deeppink}
+  footer{
+	  text-align: center;
+  }
